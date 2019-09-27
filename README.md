@@ -16,6 +16,6 @@ Instructions:
 
 ### Media
 
-Escheresque Dark from www.subtlepatterns.com, under CC BY-SA 3.0  
-web-design by rahu from https://pixabay.com/en/web-design-coding-web-developing-2906159/, under CC0 License  
+[Escheresque Dark](https://www.subtlepatterns.com), under CC BY-SA 3.0  
+[web-design by rahu](https://pixabay.com/en/web-design-coding-web-developing-2906159/), under CC0 License  
 Spinner from loading.io, under CC0 License
