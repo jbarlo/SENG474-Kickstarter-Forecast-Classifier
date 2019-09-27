@@ -1,0 +1,165 @@
+body {
+    background-color: #313131;
+    background-image: url('/img/escheresque_ste/escheresque_ste.png');
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-shadow: 0px 3px black;
+}
+
+h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+}
+
+#header {
+    background-image: url('/img/web-design-2906159.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #636363;
+    box-shadow: 0px 6px 5px #11111161;
+    padding: 1vh 0px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    font-size: 2em;
+    text-align: center;
+    color: #e9e9e9;
+    z-index: 1;
+    min-height: 40vh;
+    position: relative;
+}
+
+#content {
+    margin: auto;
+    padding: 20px 40px 30px 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e9e9e9;
+    width: 60vw;
+    flex-grow: 1;
+    color: #222222;
+}
+
+#inputDiv, .urlScraperText {
+    height: 6vh;
+    min-width: 300px;
+}
+
+#inputDiv {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+}
+
+.urlScraperText, input[type=button] {
+    border-radius: 50vh;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 0.6em;
+    text-align: center;
+    box-shadow: 0px 6px 5px #11111161;
+    color: #333333;
+    border: none;
+}
+
+.urlScraperText{
+    width: 20vw;
+}
+
+.urlScraperText:focus, input[type=button]:focus {
+    outline: 0;
+}
+
+.forecastButtonDiv {
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+input[type=button]{
+    background-color: #14e06f;
+    font-variant-caps: all-small-caps;
+    width: fit-content;
+}
+
+input[type=button]:hover {
+    background-color: #15c75c;
+}
+
+input[type=button]:active {
+    background-color: #11a551;
+    transform: translateY(4px);
+    box-shadow: 0px 2px 5px #11111161;
+}
+
+.introContent {
+    width: fit-content;
+    margin: 20px auto;
+    border-left: 6px solid #14e06f;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.contentInput {
+    padding: 20px 0;
+    display: flex;
+    border-top: 1px solid #cccccc;
+    flex-grow: 1;
+    justify-content: space-around;
+    font-style: italic;
+    display: flex;
+}
+
+.contentTextDiv {
+    flex-grow: 1;
+    text-align: right;
+    margin: 0px 20px;
+}
+
+.contentText {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contentLabel {
+    width: fit-content;
+}
+
+.contentRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+span {
+    padding: 0 10px;
+}
+
+#campaignText {
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+}
+
+#loader {
+    display: block;
+    margin: auto;
+    visibility: hidden;
+}
+
+#footer {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-top: 40px;
+    font-style: italic;
+    color: #777777;
+}

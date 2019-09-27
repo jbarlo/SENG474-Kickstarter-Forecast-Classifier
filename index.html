@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="/js/app.js" defer></script>
+    </head>
+    <body>
+            <div id="header">
+                <div id="titleDiv">
+                    <h1>KickStarter Forecast</h1>
+                </div>
+                <!-- Future work: Kickstarter scraper
+                    <div id="inputDiv">
+                    <input type="text" class="urlScraperText" placeholder="URL"></input>
+                    <input type="button" value="Autofill"></input>
+                </div> -->
+            </div>
+            <div id="content">
+                <div class="introContent">
+                    <!-- Blurb text for Kickstarter scraper
+                        Input a KickStarter URL above and we'll try to determine if it will be backed or not!<br>
+                    <i style="color: #888888">Alternatively, you may want to type into the boxes below to customize your input.</i> -->
+                    Input KickStarter information below and we'll try to determine if it will be backed or not!<br>
+                    <i style="color: #888888">Select Full Forecast if you feel like retraining everything.</i>
+                </div>
+                <form>
+                    <div class="contentRow">
+                            <div class="contentInput"><span>Original pledge goal</span><div class="contentTextDiv"><input class="contentText" type="number" id="inGoal" name="inGoal" value=0></input></div></div>
+                            <div class="contentInput"><span>Currency</span><div class="contentTextDiv"><select class="contentText" id="inCurr" name="inCurr"></select></div></div>
+
+                            <div class="contentInput">
+                                <div class="contentLabel"><input type="checkbox" id="chkDisComm"> Disabled Communication</input></div>
+                                <div class="contentLabel"><input type="checkbox" name="chkStaff" value="true" id="chkStaff"> Staff Pick</input></div>
+                            </div>
+                    </div>
+                    <div class="contentRow">
+                            <div class="contentInput"><span>Project category</span><div class="contentTextDiv"><select class="contentText" id="inCat" name="inCat"></select></div></div>
+                            <div class="contentInput"><span>Country</span><div class="contentTextDiv"><select class="contentText" id="inCountry" name="inCountry"></select></div></div>
+                    </div>
+                </form>
+
+                <div class="introContent">
+                    <i style="color: #888888">Note: Prediction can take a little while.</i>
+                </div>
+
+                <div id="divPreds"></div>
+                <br>
+                <img id="loader" src='img/loading.svg'></img>
+                <br>
+                <div class="forecastButtonDiv">
+                    <input type="button" value="Quick Forecast" onclick="quickForecast();"></input>
+                    <input type="button" value="Full Forecast" onclick="fullForecast();"></input>
+                </div>
+                <span id="footer">Made for SENG474 ♥</span>
+            </div>
+    </body>
+</html>
